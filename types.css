@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@200&display=swap');
+.product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 300px;
+    margin: 20px;
+    border: 4px solid #0011ff;
+    padding: 10px;
+}
+
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    color: #0011ff;
+    font-size: 40px;
+    font-weight: bold;
+}
+.product-listing img {
+    /* max-width: auto;
+    height: auto; */
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain; /* Add this line to scale the image while maintaining its aspect ratio */
+        margin: 0 auto;
+   
+}
+
+.product-listing h2 {
+    margin-top: 0;
+}
+
+.product p {
+    margin-top: 5px;
+}
+
+.product-listing button {
+    background-color: #333;
+    color: #fff;
+    border: 2px  solid #333333;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product-listing button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 550px) {
+    .product {
+      flex: 1 0 100%; /* Make each product take up the full width on small screens */
+
+    }
+    .product-listing {
+        margin-top: 60px; /* Add this line to create a gap between the search bar and the first product */
+    }
+    
+    .product img {
+      width: 100%; /* Make images full width on small screens */
+    }
+}

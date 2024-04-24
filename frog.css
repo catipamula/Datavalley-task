@@ -1,0 +1,36 @@
+/* *{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+} */
+#img:hover{
+   transform: scale(0.9) !important;
+   
+}
+.navbar-brand{
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+
+}
+#para:hover{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+   font-style: oblique;
+   color: rgb(54, 210, 30);
+}
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+  100%{
+        transform: translateX(850px);
+    }
+}
+tr>td:nth-child(2){
+    border-bottom: 2px solid black;
+}
+td{
+    border-left: 2px solid black!important;
+    padding: 10px !important;
+}
+
